@@ -7,4 +7,6 @@ spec:
     - name: {{index .Values "file.me" "name"}}
       image: busybox
       command:
-        - /bin/sh -c echo {{ .Values.secret }}
+        - sh -c
+      args:
+        - echo {{ .Values.secret }}
