@@ -8,4 +8,4 @@ spec:
       image: busybox
       command:
         - echo
-        - {{ .Values.secret }}
+        - {{ .Values.secret }} - {{ .Values.secret2 }}
